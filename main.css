@@ -2,3 +2,37 @@ svg[role="abluebird"]{
     width: 50px;
     height: 40px;
 }
+header[role="banner"][nowselected="home"]               a[aria-label="Home"][role="link"] *,
+header[role="banner"][nowselected="home"]               a[aria-label="Home (New unread posts)"][role="link"] *,
+header[role="banner"][nowselected="explore"]            a[aria-label="Search and explore"][role="link"] *,
+header[role="banner"][nowselected="notifications"]      a[aria-label="Notifications"][role="link"] *,
+header[role="banner"][nowselected="messages"]           a[aria-label="Direct Messages"][role="link"] *,
+header[role="banner"][nowselected="profile"]            a[aria-label="Profile"][role="link"] *,
+header[role="banner"][nowselected="communities"]        a[aria-label="Communities"][role="link"] *,
+header[role="banner"][nowselected="verified-choose"]    a[aria-label="Premium"][role="link"] *,
+header[role="banner"][nowselected="lists"]              a[aria-label="Lists"][role="link"] *{
+    color: rgb(29, 155, 240);
+    fill: rgb(29, 155, 240);
+}
+
+header[role="banner"][nowselected="home"]               a[aria-label="Home"][role="link"] svg,
+header[role="banner"][nowselected="home"]               a[aria-label="Home (New unread posts)"][role="link"] svg {
+    width: 32px!important;
+    height: 32px!important;
+}
+
+header[role="banner"][nowselected="home"]               a[aria-label="Home"][role="link"] svg>g,
+header[role="banner"][nowselected="home"]               a[aria-label="Home (New unread posts)"][role="link"] svg>g {
+    transform: translate(0, 128) scale(0.1, -0.1)!important;
+    stroke: none!important;
+}
+
+header[role="banner"][nowselected="home"]               a[aria-label="Home"][role="link"] svg.r-lwhw9o>g,
+header[role="banner"][nowselected="home"]               a[aria-label="Home (New unread posts)"][role="link"] svg.r-lwhw9o>g {
+    transform: translate(23px, 25px) scale(-0.02) !important;
+}
+
+header[role="banner"][nowselected="home"]               a[aria-label="Home"][role="link"] svg>g>path,
+header[role="banner"][nowselected="home"]               a[aria-label="Home (New unread posts)"][role="link"] svg>g>path {
+    d: path("M 489 1037 c -63 -34 -133 -73 -155 -86 c -21 -13 -74 -43 -117 -65 c -54 -28 -80 -48 -84 -64 c -8 -32 11 -49 47 -44 c 27 4 32 0 45 -30 c 7 -19 21 -104 30 -189 c 21 -207 32 -274 53 -317 c 29 -62 49 -67 307 -70 c 275 -4 295 0 342 70 c 34 51 34 52 58 308 c 9 91 21 182 26 202 c 9 34 11 36 38 28 c 60 -17 84 49 29 76 c -73 37 -296 158 -319 175 c -44 31 -132 69 -159 68 c -14 0 -77 -28 -141 -62 Z m 217 -276 c 34 -18 44 -30 75 -88 c 21 -39 2 -110 -39 -150 c -41 -41 -69 -53 -119 -53 c -48 0 -98 33 -128 84 c -30 52 -31 77 -4 133 c 41 85 134 117 215 74 Z")!important;
+}
