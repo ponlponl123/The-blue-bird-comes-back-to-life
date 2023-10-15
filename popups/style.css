@@ -1,0 +1,97 @@
+html {
+    width: 350px;
+    height: 400px;
+}
+body {
+    height: 100%;
+}
+
+.heart {
+  width: 100px;
+  height: 100px;
+  background: url("./returntobluebird.png") no-repeat;
+  background-position: 0 0;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+  
+  &.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+  }
+}
+
+.stage {
+  position: fixed;
+  background: #fff;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body>main {
+    transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+body>main>:nth-child(1) {
+    margin-top: 0;
+    color: #1d9bf0;
+}
+
+body>main>:nth-child(2) {
+    height: 75px;
+    width: 75px;
+    margin: 15px auto;
+}
+
+body>main>footer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+body>main>footer>div {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+}
+
+body>main>footer>div>a {
+    width: 30px;
+    height: 30px;
+    transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body>main>footer>div>a:hover {transform: scale(1.1);}
+body>main>footer>div>a:active {transform: scale(1);opacity: 0.8;transition-duration: .05s;}
+
+body>main>footer>div>a>svg {
+    width: 30px;
+    height: 30px;
+}
+
+body:not(.loaded)>main,
+body.loaded>.stage {
+    opacity: 0;
+    pointer-events: none;
+    cursor: inherit;
+    transform: translateY(25px);
+}
