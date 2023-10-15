@@ -1,4 +1,4 @@
-# The-blue-bird-comes-back-to-life
+# Twitter
 The blue bird comes back to life!
 
 **Try it now!, at chrome web store (Soon..)**
