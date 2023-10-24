@@ -1,7 +1,7 @@
 {
   "name": "Return A Blue Bird",
   "version": "1.0",
-  "description": "For Elon Mask",
+  "description": "Hello World!",
   "manifest_version": 3,
   "action": {
     "default_title": "Return A Blue Bird",
@@ -22,8 +22,8 @@
   "content_scripts": [
     {
       "matches": ["https://x.com/*", "https://twitter.com/*"],
-      "css": ["main.css"],
-      "js": ["main.js"]
+      "css": ["main.min.css"],
+      "js": ["main.min.js"]
     }
   ]
 }
